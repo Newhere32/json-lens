@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json-lens-cli"
+version = "1.0.0"
+description = "A dependency-free JSON validator and formatter CLI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+
+[project.scripts]
+json-lens = "json_lens.cli:main"
+
+[tool.setuptools]
+packages = ["json_lens"]
